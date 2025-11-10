@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="8dp"
+    android:baselineAligned="false"
+    android:descendantFocusability="afterDescendants">
+
+    <!-- Poster -->
+    <ImageView
+        android:id="@+id/imgPoster"
+        android:layout_width="56dp"
+        android:layout_height="80dp"
+        android:layout_marginEnd="8dp"
+        android:scaleType="centerCrop"
+        android:contentDescription="poster"/>
+
+    <!-- Titre -->
+    <TextView
+        android:id="@+id/txtTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="2.2"
+        android:textColor="@android:color/black"
+        android:textSize="16sp"
+        android:maxLines="2" />
+
+    <!-- Watched -->
+    <CheckBox
+        android:id="@+id/chWatched"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.6"
+        android:text="" />
+
+    <!-- Rating -->
+    <RatingBar
+        android:id="@+id/rating"
+        style="?android:attr/ratingBarStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:numStars="5"
+        android:stepSize="1"
+        android:isIndicator="false"
+        android:clickable="true"
+        android:focusable="false"
+        android:splitTrack="false"
+        android:layout_marginEnd="6dp" />
+
+    <!-- Comment (+) -->
+    <ImageButton
+        android:id="@+id/btnComment"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:background="@android:color/transparent"
+        android:src="@android:drawable/ic_input_add"
+        android:contentDescription="Comment"/>
+</LinearLayout>

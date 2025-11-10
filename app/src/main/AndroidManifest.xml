@@ -1,25 +1,57 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
-
+    <uses-permission android:name="android.permission.INTERNET"/>
     <application
         android:allowBackup="true"
-        android:dataExtractionRules="@xml/data_extraction_rules"
-        android:fullBackupContent="@xml/backup_rules"
+        android:roundIcon="@mipmap/ic_logo"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.Kairos">
+        android:theme="@style/Theme.Kairos"
+        tools:targetApi="31">
+
+        <!-- Écran de démarrage -->
         <activity
-            android:name=".MainActivity"
+            android:name=".SplashActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-    </application>
 
+        <!-- Page Habits (page principale après le Splash) -->
+        <activity android:name=".HabitActivity" />
+
+        <!-- Autres pages (vides pour l’instant) -->
+        <activity android:name=".TravelActivity" />
+        <activity android:name=".FunActivity" />
+        <activity android:name=".JournalActivity" />
+        <activity android:name=".SportHobbyActivity" />
+
+        <!-- Ancienne MainActivity (tu peux la garder si tu l’utilises plus tard) -->
+        <activity android:name=".MainActivity" />
+        <activity android:name=".HobbyTrackerActivity" />
+        <activity android:name=".SportTrackerActivity" />
+
+        <activity android:name=".NotesActivity" android:exported="false" />
+        <activity android:name=".NoteEditorActivity" android:exported="false" />
+
+        <activity android:name=".TodoListsActivity" android:exported="false" />
+        <activity android:name=".TodoEditorActivity" android:exported="false" />
+        <activity android:name=".FunActivity"/>
+        <activity android:name=".BookTrackerActivity"/>
+        <activity android:name=".WatchTrackerActivity"/>
+        <activity android:name=".TravelDetailActivity" />
+        <activity android:name=".ImportPlaceActivity" android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.SEND" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="text/plain" />
+            </intent-filter>
+        </activity>
+
+
+    </application>
 </manifest>

@@ -1,0 +1,55 @@
+package com.example.kairos;
+
+import java.util.Arrays;
+import java.util.List;
+
+public final class CountryCityData_Europe implements CountryCityData {
+    @Override public List<Country> countries() { return Arrays.asList(
+            new Country("AL","Albania", Arrays.asList("Tirana","Durrës","Vlorë","Shkodër","Berat")),
+            new Country("AD","Andorra", Arrays.asList("Andorra la Vella","Escaldes-Engordany","Encamp","La Massana","Ordino")),
+            new Country("AT","Austria", Arrays.asList("Vienna","Salzburg","Innsbruck","Graz","Linz","Hallstatt")),
+            new Country("BY","Belarus", Arrays.asList("Minsk","Brest","Grodno","Gomel","Vitebsk")),
+            new Country("BE","Belgium", Arrays.asList("Brussels","Antwerp","Bruges","Ghent","Leuven","Liège")),
+            new Country("BA","Bosnia and Herzegovina", Arrays.asList("Sarajevo","Mostar","Banja Luka","Tuzla","Trebinje")),
+            new Country("BG","Bulgaria", Arrays.asList("Sofia","Plovdiv","Varna","Burgas","Veliko Tarnovo")),
+            new Country("HR","Croatia", Arrays.asList("Zagreb","Split","Dubrovnik","Zadar","Rijeka","Pula")),
+            new Country("CY","Cyprus", Arrays.asList("Nicosia","Limassol","Larnaca","Paphos","Ayia Napa")),
+            new Country("CZ","Czechia", Arrays.asList("Prague","Brno","Český Krumlov","Ostrava","Karlovy Vary")),
+            new Country("DK","Denmark", Arrays.asList("Copenhagen","Aarhus","Odense","Aalborg","Roskilde")),
+            new Country("EE","Estonia", Arrays.asList("Tallinn","Tartu","Pärnu","Narva","Kuressaare")),
+            new Country("FI","Finland", Arrays.asList("Helsinki","Tampere","Turku","Oulu","Rovaniemi")),
+            new Country("FR","France", Arrays.asList("Paris","Lyon","Marseille","Nice","Bordeaux","Toulouse","Lille","Nantes","Strasbourg")),
+            new Country("DE","Germany", Arrays.asList("Berlin","Munich","Hamburg","Cologne","Frankfurt","Düsseldorf","Stuttgart","Leipzig")),
+            new Country("GR","Greece", Arrays.asList("Athens","Thessaloniki","Heraklion","Chania","Rhodes","Patras")),
+            new Country("HU","Hungary", Arrays.asList("Budapest","Debrecen","Szeged","Pécs","Eger")),
+            new Country("IS","Iceland", Arrays.asList("Reykjavik","Akureyri","Keflavik","Hafnarfjörður","Selfoss")),
+            new Country("IE","Ireland", Arrays.asList("Dublin","Cork","Galway","Limerick","Kilkenny")),
+            new Country("IT","Italy", Arrays.asList("Rome","Milan","Florence","Naples","Venice","Turin","Bologna","Verona")),
+            new Country("LV","Latvia", Arrays.asList("Riga","Jurmala","Liepaja","Daugavpils","Cesis")),
+            new Country("LI","Liechtenstein", Arrays.asList("Vaduz","Schaan","Triesen","Balzers","Eschen")),
+            new Country("LT","Lithuania", Arrays.asList("Vilnius","Kaunas","Klaipėda","Trakai","Šiauliai")),
+            new Country("LU","Luxembourg", Arrays.asList("Luxembourg","Esch-sur-Alzette","Differdange","Echternach","Vianden")),
+            new Country("MT","Malta", Arrays.asList("Valletta","Mdina","Sliema","St. Julian's","Marsaxlokk")),
+            new Country("MD","Moldova", Arrays.asList("Chișinău","Tiraspol","Bălți","Orhei","Soroca")),
+            new Country("MC","Monaco", Arrays.asList("Monaco","Monte-Carlo","La Condamine","Fontvieille","Moneghetti")),
+            new Country("ME","Montenegro", Arrays.asList("Podgorica","Kotor","Budva","Herceg Novi","Tivat")),
+            new Country("NL","Netherlands", Arrays.asList("Amsterdam","Rotterdam","The Hague","Utrecht","Eindhoven","Maastricht")),
+            new Country("MK","North Macedonia", Arrays.asList("Skopje","Ohrid","Bitola","Tetovo","Kumanovo")),
+            new Country("NO","Norway", Arrays.asList("Oslo","Bergen","Trondheim","Stavanger","Tromsø")),
+            new Country("PL","Poland", Arrays.asList("Warsaw","Kraków","Gdańsk","Wrocław","Poznań")),
+            new Country("PT","Portugal", Arrays.asList("Lisbon","Porto","Coimbra","Braga","Faro","Aveiro","Évora")),
+            new Country("RO","Romania", Arrays.asList("Bucharest","Cluj-Napoca","Brașov","Sibiu","Timișoara")),
+            new Country("RU","Russia", Arrays.asList("Moscow","Saint Petersburg","Kazan","Sochi","Novosibirsk")),
+            new Country("SM","San Marino", Arrays.asList("San Marino","Borgo Maggiore","Serravalle","Domagnano","Acquaviva")),
+            new Country("RS","Serbia", Arrays.asList("Belgrade","Novi Sad","Niš","Subotica","Kragujevac")),
+            new Country("SK","Slovakia", Arrays.asList("Bratislava","Košice","Žilina","Nitra","Trnava")),
+            new Country("SI","Slovenia", Arrays.asList("Ljubljana","Bled","Maribor","Piran","Koper")),
+            new Country("ES","Spain", Arrays.asList("Madrid","Barcelona","Valencia","Seville","Bilbao","Granada","Málaga","Palma")),
+            new Country("SE","Sweden", Arrays.asList("Stockholm","Gothenburg","Malmö","Uppsala","Lund")),
+            new Country("CH","Switzerland", Arrays.asList("Zurich","Geneva","Basel","Bern","Lausanne","Lucerne")),
+            new Country("TR","Türkiye", Arrays.asList("Istanbul","Ankara","Izmir","Antalya","Cappadocia")),
+            new Country("UA","Ukraine", Arrays.asList("Kyiv","Lviv","Odessa","Kharkiv","Dnipro")),
+            new Country("GB","United Kingdom", Arrays.asList("London","Manchester","Birmingham","Edinburgh","Glasgow","Liverpool","Bristol","Leeds")),
+            new Country("VA","Vatican City", Arrays.asList("Vatican City"))
+    );}
+}

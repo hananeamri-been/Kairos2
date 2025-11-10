@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="72dp"
+    android:paddingStart="8dp"
+    android:paddingEnd="8dp"
+    android:paddingTop="8dp"
+    android:paddingBottom="8dp">
+
+    <!-- Guides -->
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gTitleEnd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.30" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gActionsStart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.78" />
+
+    <!-- Nom de l’habitude -->
+    <TextView
+        android:id="@+id/txtTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:maxLines="2"
+        android:textColor="#000000"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/gTitleEnd"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <!-- Cases des jours -->
+    <LinearLayout
+        android:id="@+id/daysContainer"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:weightSum="7"
+        app:layout_constraintStart_toStartOf="@id/gTitleEnd"
+        app:layout_constraintEnd_toStartOf="@id/gActionsStart"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <!-- Jour S -->
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+            <!-- CheckBox NORMAL (pas de drawable custom) -->
+            <CheckBox
+                android:id="@+id/cb0"
+                android:layout_width="44dp"
+                android:layout_height="44dp"
+                android:layout_gravity="center"
+                android:padding="0dp"/>
+            <!-- Jour non prévu : case rayée réduite et ENTIEREMENT visible -->
+            <ImageView
+                android:id="@+id/off0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxWidth="35dp"
+                android:maxHeight="35dp"
+                android:layout_gravity="center"
+                android:src="@drawable/case_rayee"
+                android:adjustViewBounds="true"
+                android:scaleType="centerInside"
+                android:visibility="gone"/>
+        </FrameLayout>
+
+        <!-- Jour M -->
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+            <CheckBox
+                android:id="@+id/cb1"
+                android:layout_width="44dp"
+                android:layout_height="44dp"
+                android:layout_gravity="center"
+                android:padding="0dp"/>
+            <ImageView
+                android:id="@+id/off1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxWidth="35dp"
+                android:maxHeight="35dp"
+                android:layout_gravity="center"
+                android:src="@drawable/case_rayee"
+                android:adjustViewBounds="true"
+                android:scaleType="centerInside"
+                android:visibility="gone"/>
+        </FrameLayout>
+
+        <!-- Jour T -->
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+            <CheckBox
+                android:id="@+id/cb2"
+                android:layout_width="44dp"
+                android:layout_height="44dp"
+                android:layout_gravity="center"
+                android:padding="0dp"/>
+            <ImageView
+                android:id="@+id/off2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxWidth="35dp"
+                android:maxHeight="35dp"
+                android:layout_gravity="center"
+                android:src="@drawable/case_rayee"
+                android:adjustViewBounds="true"
+                android:scaleType="centerInside"
+                android:visibility="gone"/>
+        </FrameLayout>
+
+        <!-- Jour W -->
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+            <CheckBox
+                android:id="@+id/cb3"
+                android:layout_width="44dp"
+                android:layout_height="44dp"
+                android:layout_gravity="center"
+                android:padding="0dp"/>
+            <ImageView
+                android:id="@+id/off3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxWidth="35dp"
+                android:maxHeight="35dp"
+                android:layout_gravity="center"
+                android:src="@drawable/case_rayee"
+                android:adjustViewBounds="true"
+                android:scaleType="centerInside"
+                android:visibility="gone"/>
+        </FrameLayout>
+
+        <!-- Jour T -->
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+            <CheckBox
+                android:id="@+id/cb4"
+                android:layout_width="44dp"
+                android:layout_height="44dp"
+                android:layout_gravity="center"
+                android:padding="0dp"/>
+            <ImageView
+                android:id="@+id/off4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxWidth="35dp"
+                android:maxHeight="35dp"
+                android:layout_gravity="center"
+                android:src="@drawable/case_rayee"
+                android:adjustViewBounds="true"
+                android:scaleType="centerInside"
+                android:visibility="gone"/>
+        </FrameLayout>
+
+        <!-- Jour F -->
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+            <CheckBox
+                android:id="@+id/cb5"
+                android:layout_width="44dp"
+                android:layout_height="44dp"
+                android:layout_gravity="center"
+                android:padding="0dp"/>
+            <ImageView
+                android:id="@+id/off5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxWidth="35dp"
+                android:maxHeight="35dp"
+                android:layout_gravity="center"
+                android:src="@drawable/case_rayee"
+                android:adjustViewBounds="true"
+                android:scaleType="centerInside"
+                android:visibility="gone"/>
+        </FrameLayout>
+
+        <!-- Jour S -->
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+            <CheckBox
+                android:id="@+id/cb6"
+                android:layout_width="44dp"
+                android:layout_height="44dp"
+                android:layout_gravity="center"
+                android:padding="0dp"/>
+            <ImageView
+                android:id="@+id/off6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxWidth="35dp"
+                android:maxHeight="35dp"
+                android:layout_gravity="center"
+                android:src="@drawable/case_rayee"
+                android:adjustViewBounds="true"
+                android:scaleType="centerInside"
+                android:visibility="gone"/>
+        </FrameLayout>
+    </LinearLayout>
+
+    <!-- Actions à droite -->
+    <LinearLayout
+        android:id="@+id/actions"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:minWidth="104dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical|end"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintStart_toStartOf="@id/gActionsStart"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <ImageButton
+            android:id="@+id/btnDelete"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:padding="10dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/delete"
+            android:scaleType="centerInside"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/delete" />
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="1dp" />
+
+        <ImageButton
+            android:id="@+id/btnEdit"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:padding="10dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/edit"
+            android:scaleType="centerInside"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/edit" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

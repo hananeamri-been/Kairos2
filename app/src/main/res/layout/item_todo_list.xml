@@ -1,0 +1,31 @@
+<!-- res/layout/item_todo_list.xml -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/bg_button_rounded"
+    android:padding="12dp"
+    android:foreground="?attr/selectableItemBackground"
+    android:descendantFocusability="blocksDescendants"
+    android:focusable="false">
+
+    <TextView
+        android:id="@+id/todoListTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="2025-10-31"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        android:textSize="16sp"
+        android:maxLines="1"
+        android:ellipsize="end"/>
+
+    <TextView
+        android:id="@+id/todoListSubtitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="0 tasks"
+        android:textSize="12sp"
+        android:textColor="#7A7A7A"
+        android:paddingTop="2dp"/>
+</LinearLayout>

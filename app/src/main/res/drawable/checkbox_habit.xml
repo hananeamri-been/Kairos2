@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- COCHÉ -->
+    <item android:state_checked="true">
+        <!-- Inset = marge interne pour que l'icône ne soit jamais rognée -->
+        <inset android:insetLeft="4dp" android:insetTop="4dp"
+            android:insetRight="4dp" android:insetBottom="4dp">
+            <bitmap
+                android:src="@drawable/check"
+                android:gravity="center"/>
+        </inset>
+    </item>
+
+    <!-- NON COCHÉ -->
+    <item>
+        <inset android:insetLeft="4dp" android:insetTop="4dp"
+            android:insetRight="4dp" android:insetBottom="4dp">
+            <bitmap
+                android:src="@drawable/case_vide"
+                android:gravity="center"/>
+        </inset>
+    </item>
+
+</selector>

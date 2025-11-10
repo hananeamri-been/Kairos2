@@ -1,3 +1,35 @@
 <resources>
     <string name="app_name">Kairos</string>
+
+    <!-- Descriptions pour les icônes de la barre du bas -->
+    <string name="goals">Goals</string>
+    <string name="travels">Travels</string>
+    <string name="divertissement">Entertainment</string>
+    <string name="journal">Journal</string>
+    <string name="sport_hobby">SportEtHobby</string>
+    <string name="habits">Habits</string>
+    <string name="search">Search</string>
+    <string name="habit_title">Habit title</string>
+    <string name="frequency">Frequency</string>
+    <string name="monday">Monday</string>
+    <string name="tuesday">Tuesday</string>
+    <string name="wednesday">Wednesday</string>
+    <string name="thursday">Thursday</string>
+    <string name="friday">Friday</string>
+    <string name="saturday">Saturday</string>
+    <string name="sunday">Sunday</string>
+    <string name="edit">Edit</string>
+    <string name="day_sat_checkbox">Day sat checkbox</string>
+    <string name="day_sun_checkbox">Day sun checkbox</string>
+    <string name="day_mon_checkbox">Day mon checkbox</string>
+    <string name="day_tue_checkbox">Day tue checkbox</string>
+    <string name="day_wed_checkbox">Day wed checkbox</string>
+    <string name="day_thu_checkbox">Day thu checkbox</string>
+    <string name="day_fri_checkbox">Day fri checkbox</string>
+    <string name="delete">Delete</string>
+    <string name="save">Save</string>
+    <string name="hobby_title">Hobby title</string>
+    <string name="habit_title_required">Please enter a title</string>
+    <string name="add">Add</string>
+
 </resources>
